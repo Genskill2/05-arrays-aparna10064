@@ -5,8 +5,7 @@
 int max(int a[], int n)
 {
 	int max = 0;
-	for(int i=0; i<n; i++)
-	{
+	for(int i=0; i<n; i++) {
 		if(a[i]>max)
 		max= a[i]; 
 	}
@@ -16,14 +15,13 @@ int max(int a[], int n)
 /*Minimum*/
 int min(int a[], int n)  
 {
-	int min;
-	min = a[0];
+	int min = a[0];
 	for(int i=0; i<n; i++) 
 	{
 		if(a[i]<min)
 		min =a[i];
 	}
-	return min;
+return min;
 }
 
 float average(int arr[], int n)
