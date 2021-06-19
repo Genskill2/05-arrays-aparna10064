@@ -41,21 +41,21 @@ float average(int arr[], int n)
 
 int mode(int arr[], int n)
 {
- int cnt =0, coutn=0, max=0;
-	for(int i=0; i<n; i++)
+ int i,j,cnt =0, count=0, max=0;
+	for(i=0; i<n; i++)
 	{
-		for(int j=0; j<n; j++)
-		{
-			if(arr[i] == arr[j])
-			cnt ++;
-		}
+	for(j=0; j<n; j++)
+	{
+		if(arr[i] == arr[j])
+		cnt ++;
+	}
 	}
 	if(cnt>=max)
 	{
-		coutn = max;
+		count = max;
 		max = arr[i];
 	}
-     }
+        }
  return max;
 }
 
@@ -64,9 +64,9 @@ int factors(int n, int arr[])
 	int i,j=0;
 	for(i=2; i<=n; i++) 
 	{
-		if(n%i ==0)
+		if(n%i == 0)
 		{
-			a[j] = i;
+			arr[j] = i;
 			j++;
 			n =n/i;
 		}
