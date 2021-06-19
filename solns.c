@@ -62,11 +62,11 @@ int factors(int n, int arr[])
 	int i,j=0;
 	for(i=2; i<=n; i++) 
 	{
-		if(n%i == 0)
+		while(n%i == 0)
 		{
+			n =n/i;
 			arr[j] = i;
 			j++;
-			n =n/i;
 		}
 	}
 	return j;
