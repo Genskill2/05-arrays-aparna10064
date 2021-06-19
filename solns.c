@@ -44,7 +44,7 @@ int mode(int arr[], int n)
 	{
 	for(j=0; j<n; j++)
 	{
-		if(arr[i] == arr[j])
+		if(arr[i] == arr[j]){
 		cnt ++;
 	}
 	}
