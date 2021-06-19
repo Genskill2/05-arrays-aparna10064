@@ -35,21 +35,44 @@ float average(int avg[], int n)
 	avg = (float)sum/n;
 	return avg;
 }
+
 int mode(int arr[], int n)
 {
-	int counts[n];
-	int c;
+ int cnt =0, coutn=0, max=0;
 	for(int i=0; i<n; i++)
 	{
-		n = arr[i];
 		for(int j=0; j<n; j++)
 		{
-			if(a[j] == n)
-			c += 1;
+			if(arr[i] == arr[j])
+			cnt ++;
 		}
-	counts[i] = c;
 	}
+	if(cnt>=max)
+	{
+		coutn = max;
+		max = arr[i];
+	}
+     }
+ return max;
+}
+
+int factors(int n, int arr[])
+{
+	int i,j=0;
+	for(i=2; i<=n; i++) 
+	{
+		if(n%i ==0)
+		{
+			a[j] = i;
+			j++;
+			n =n/i;
+		}
+	}
+	return j;
 	
+}
+			
+			
 	
 
 
